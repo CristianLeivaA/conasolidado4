@@ -1,0 +1,110 @@
+
+.todo{
+    width: 100%;
+    min-width: 1078px;
+}
+
+.ancho{
+    margin-left: 80px;
+    min-width: 1025px !important;
+    height: 290px;
+}
+
+.izq {
+    width: 50px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#der {
+    display: inline-block;
+}
+
+.ocho {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.tercio{
+    height: 120px;
+    width: 290px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    border: 2px solid grey;
+    border-radius: 6px;
+  
+}
+
+.bolita {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    margin-top: 15px;
+    margin-left: 7px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.texto {
+    width: 220px;
+    margin: 5px 10px;
+    display: inline-block;
+}
+
+/*************************************************************************************/
+
+#linea #raya {
+    width: 3px;
+    height: 100%;
+    background: #333;
+    position: absolute;
+    left: 110px;
+ 
+    transform: translateX(-50%);
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: yellow;
+    border-color: black;
+    border: 1px solid gainsboro;
+    backface-visibility: visible;
+    position: absolute;
+    left: 100px;
+}
+
+#circle1 {
+    top: 28%;
+}
+
+#circle2 {
+    top: 62%;
+}
+
+#circle3 {
+    top: 92%;
+}
+
+.rango {
+    cursor: pointer;
+    width: 100px;
+    height: 20px;
+    position: absolute;
+    left: 20px;
+}
+
+#rank1{
+    top: 27%;
+}
+
+#rank2 {
+    top: 61%;
+}
+
+#rank3 {
+    top: 91%;
+}
