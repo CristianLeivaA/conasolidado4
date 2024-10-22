@@ -1,6 +1,6 @@
 let uno = 1;
-let seis = 6;
-let once = 11;
+let siete = 7;
+let doce = 12;
 let personajes1 = [];
 let personajes2 = [];
 let personajes3 = [];
@@ -16,11 +16,11 @@ const noEsta = (arr, dato) => {
 };
 
 const llena = (personaje, num) => {
-    if (num < 6) {
+    if (num < 7) {
         if (noEsta(personajes1, personaje.name)){
             personajes1.push(personaje);
         }
-    } else if (num < 11) {
+    } else if (num < 12) {
         if (noEsta(personajes2, personaje.name)){
             personajes2.push(personaje);
         }
@@ -66,23 +66,23 @@ const leePersonaje = (arr, textodiv, secc, color, ri) => {
     let apisw = "";
     if (ri == 1) {
         suma = uno;
-    } else if (ri == 6) {
-        suma = seis;
+    } else if (ri == 7) {
+        suma = siete;
     } else {
-        suma = once;
+        suma = doce;
     }
-    if (suma < 16) {
+    if (suma < 17) {
         apisw = `https://swapi.dev/api/people/${suma}/`;
         obtienePerso(apisw, suma);
         suma++;              
         if (ri == 1 && suma < 6) {
             uno = suma;
-        } else if (ri == 6 && suma < 11) {
-            seis = suma;
-        } else if (ri== 11 && suma < 16) {
-            once = suma;
+        } else if (ri == 7 && suma < 12) {
+            siete = suma;
+        } else if (ri== 12 && suma < 17) {
+            doce = suma;
         } else {
-            suma = 16;
+            suma = 17;
         }        
         dibujaTarjetas(arr, secc, color, textodiv);
     }   
@@ -96,10 +96,10 @@ $('#rank1').hover(function () {
 
 $('#rank2').hover(function () {
     const textodiv = "Encontrarás información sobre personajes secundarios importantes.";
-    leePersonaje(personajes2, textodiv, "#secundarios", "bg-success", 6);
+    leePersonaje(personajes2, textodiv, "#secundarios", "bg-success", 7);
 });
 
 $('#rank3').hover(function () {
     const textodiv = "Encontrarás otros personajes significativos.";
-    leePersonaje(personajes3, textodiv, "#significativos", "bg-info", 11);
+    leePersonaje(personajes3, textodiv, "#significativos", "bg-info", 12);
 });
